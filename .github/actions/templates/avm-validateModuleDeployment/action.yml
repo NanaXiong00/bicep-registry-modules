@@ -59,7 +59,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Azure Login
+    - name: Azure Login (Client Credentials)
       if: ${{ env.AZURE_CREDENTIALS != '' }}
       uses: azure/login@v2
       with:
